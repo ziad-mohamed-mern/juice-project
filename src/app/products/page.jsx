@@ -10,7 +10,7 @@ const categories = ["الكل", "حمضيات", "استوائي", "توتيات"
 const products = [
   { id: 1, name: "عصير البرتقال", category: "حمضيات", color: "from-orange-400 to-orange-600", price: "12 ر.س", nutrition: "فيتامين C، بوتاسيوم", img: "https://images.unsplash.com/photo-1613478223719-2ab802602423?q=80&w=400" },
   { id: 2, name: "عصير المانجو", category: "استوائي", color: "from-yellow-400 to-yellow-600", price: "15 ر.س", nutrition: "ألياف، فيتامين A", img: "/images/mango_juice.jpg" },
-  { id: 3, name: "عصير الفراولة", category: "توتيات", color: "from-red-400 to-red-600", price: "14 ر.س", nutrition: "مضادات أكسدة", img: "https://images.unsplash.com/photo-1591244234057-04022634e064?q=80&w=400" },
+  { id: 3, name: "عصير الفراولة", category: "توتيات", color: "from-red-400 to-red-600", price: "14 ر.س", nutrition: "مضادات أكسدة", img: "/images/strawberry_juice_alt.jpg" },
   { id: 4, name: "ليمون ونعناع", category: "حمضيات", color: "from-green-400 to-green-600", price: "10 ر.س", nutrition: "منعش، مطهر", img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=400" },
   { id: 5, name: "عصير الأناناس", category: "استوائي", color: "from-yellow-300 to-yellow-500", price: "13 ر.س", nutrition: "بروميلين، هضم", img: "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?q=80&w=400" },
   { id: 6, name: "عصير الموز (مواسم)", category: "استوائي", color: "from-yellow-100 to-yellow-400", price: "12 ر.س", nutrition: "بوتاسيوم، طاقة", img: "https://images.unsplash.com/photo-1603833665858-e61d17a86224?q=80&w=400" },

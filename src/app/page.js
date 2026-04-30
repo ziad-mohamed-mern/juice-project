@@ -60,28 +60,28 @@ export default function Home() {
             {/* Real Juice Images */}
             <div className="relative w-72 h-[450px] rounded-[3rem] shadow-2xl overflow-hidden border-4 border-white/20 animate-float z-20">
               <img 
-                src="https://images.unsplash.com/photo-1613478223719-2ab802602423?q=80&w=800" 
-                alt="Orange Juice" 
+                src="/images/hero_green.png" 
+                alt="Green Juice" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8 text-white">
-                <span className="text-2xl font-bold font-tajawal">برتقال مواسم</span>
-                <span className="text-sm opacity-80">طبيعي 100%</span>
+                <span className="text-2xl font-bold font-tajawal">جرين فيبر</span>
+                <span className="text-sm opacity-80">ديتوكس طبيعي</span>
               </div>
             </div>
             
-            <div className="absolute -right-12 top-20 w-56 h-72 rounded-[2rem] shadow-xl overflow-hidden border-2 border-white/10 scale-90 -rotate-6 z-10">
+            <div className="absolute -right-12 top-20 w-56 h-72 rounded-[2rem] shadow-xl overflow-hidden border-2 border-white/10 scale-90 -rotate-6 z-10 opacity-80">
               <img 
-                src="https://images.unsplash.com/photo-1523154033640-4c58c3e08471?q=80&w=600" 
-                alt="Green Juice" 
+                src="/images/hero_strawberry.png" 
+                alt="Strawberry Juice" 
                 className="w-full h-full object-cover"
               />
             </div>
 
-            <div className="absolute -left-12 top-20 w-56 h-72 rounded-[2rem] shadow-xl overflow-hidden border-2 border-white/10 scale-90 rotate-6 z-10">
+            <div className="absolute -left-12 top-20 w-56 h-72 rounded-[2rem] shadow-xl overflow-hidden border-2 border-white/10 scale-90 rotate-6 z-10 opacity-60">
               <img 
-                src="https://images.unsplash.com/photo-1591244234057-04022634e064?q=80&w=600" 
-                alt="Strawberry Juice" 
+                src="/images/mango_juice.jpg" 
+                alt="Mango Juice" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -150,7 +150,7 @@ export default function Home() {
             {[
               { name: "عصير البرتقال", color: "bg-brand-orange", price: "12 ر.س", img: "https://images.unsplash.com/photo-1613478223719-2ab802602423?q=80&w=400" },
               { name: "عصير المانجو", color: "bg-brand-yellow", price: "15 ر.س", img: "/images/mango_juice.jpg" },
-              { name: "عصير الفراولة", color: "bg-brand-red", price: "14 ر.س", img: "https://images.unsplash.com/photo-1591244234057-04022634e064?q=80&w=400" },
+              { name: "عصير الفراولة", color: "bg-brand-red", price: "14 ر.س", img: "/images/strawberry_juice_alt.jpg" },
               { name: "عصير الرمان", color: "bg-brand-red", price: "20 ر.س", img: "/images/pomegranate_juice.jpg" },
             ].map((product, i) => (
               <motion.div

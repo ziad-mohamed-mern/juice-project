@@ -89,24 +89,42 @@ export default function About() {
         ))}
       </section>
 
-      {/* Production Gallery Placeholder */}
-      <section className="bg-black/5 dark:bg-white/5 py-24">
-        <div className="container mx-auto px-6 text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">داخل مصنعنا</h2>
-          <p className="text-gray-600 dark:text-gray-400">نستخدم أحدث التقنيات لضمان أعلى معايير النظافة والجودة</p>
-        </div>
-        <div className="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[1, 2, 3, 4].map((item) => (
-            <motion.div
-              key={item}
-              whileHover={{ scale: 1.05 }}
-              className="aspect-square glass rounded-2xl border border-white/10 flex items-center justify-center overflow-hidden"
-            >
-               <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 flex items-center justify-center">
-                 <Droplets className="w-12 h-12 text-brand-orange/30" />
-               </div>
-            </motion.div>
-          ))}
+      {/* Factory Gallery Section */}
+      <section className="bg-gray-50 dark:bg-black/20 py-24">
+        <div className="container mx-auto px-6">
+          <motion.div {...fadeInUp} className="text-center mb-16 space-y-4">
+            <h2 className="text-4xl font-bold font-tajawal">داخل مصنعنا</h2>
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+              نجمع بين التكنولوجيا الحديثة وأعلى معايير الجودة لنضمن لك قطرة من النقاء في كل زجاجة.
+            </p>
+            <div className="w-24 h-1 bg-brand-orange mx-auto rounded-full" />
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { img: "/images/factory_1.png", title: "خطوط الإنتاج المتطورة" },
+              { img: "/images/factory_2.png", title: "مختبرات ضبط الجودة" },
+              { img: "/images/factory_3.png", title: "تقنيات التعبئة الذكية" },
+              { img: "/images/factory_4.jpg", title: "عناية فائقة بالتفاصيل" },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                className="group relative h-80 rounded-[2.5rem] overflow-hidden shadow-lg"
+              >
+                <img 
+                  src={item.img} 
+                  alt={item.title} 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-8">
+                  <h3 className="text-xl font-bold text-white font-tajawal">{item.title}</h3>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
     </div>
