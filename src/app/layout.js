@@ -1,6 +1,8 @@
 import { Cairo, Tajawal } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 const cairo = Cairo({
   subsets: ["arabic"],
@@ -22,9 +24,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl" suppressHydrationWarning>
-      <body className={`${cairo.variable} ${tajawal.variable} font-cairo antialiased`}>
+      <body className={`${cairo.variable} ${tajawal.variable} font-cairo antialiased min-h-screen flex flex-col`}>
         <Providers>
-          {children}
+          <Navbar />
+          <main className="flex-grow pt-20">
+            {children}
+          </main>
+          <Footer />
         </Providers>
       </body>
     </html>
