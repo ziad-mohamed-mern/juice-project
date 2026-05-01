@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Droplets } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -45,15 +45,16 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-3">
           <motion.div
-            animate={{ rotate: [0, 10, -10, 0] }}
-            transition={{ repeat: Infinity, duration: 4 }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
           >
-            <Droplets className="w-8 h-8 text-brand-orange" />
+            <img src="/logo.png" alt="مواسم" className="h-14 w-auto" />
           </motion.div>
           <span className="text-2xl font-bold font-tajawal bg-gradient-to-l from-brand-orange to-brand-green bg-clip-text text-transparent">
-            مواسم
+            مصنع مواسم للعصيرات
           </span>
         </Link>
 
