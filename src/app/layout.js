@@ -19,10 +19,10 @@ const tajawal = Tajawal({
 export const metadata = {
   title: "مصنع مواسم للعصيرات | نضارة الطبيعة في كل رشفة",
   description: "نقدم لك أفضل العصائر الطبيعية الطازجة من مصنع مواسم. جودة، طبيعية، ونقاء في كل عبوة.",
-  // Verification tags go here
   verification: {
     other: {
-      "domain-verification": ["f2be3fe377032171255e4da911856f717b6927a7bc54348ee331d39c77d36f82"],
+      // تم تحديث الاسم هنا ليتطابق مع طلبك الجديد
+      "https://juiceprojectplum.com": "f2be3fe377032171255e4da911856f717b6927a7bc54348ee331d39c77d36f82",
     },
   },
 };
