@@ -22,7 +22,7 @@ export const metadata = {
   verification: {
     other: {
       // تم تحديث الاسم هنا ليتطابق مع طلبك الجديد
-      "https://juiceprojectplum.com": "f2be3fe377032171255e4da911856f717b6927a7bc54348ee331d39c77d36f82",
+      "https://juice-project-plum.vercel.app/": "f2be3fe377032171255e4da911856f717b6927a7bc54348ee331d39c77d36f82",
     },
   },
 };
